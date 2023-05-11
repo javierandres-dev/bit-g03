@@ -10,6 +10,60 @@
     <nav id="arriba">
       <a href="#abajo">Abajo</a>
     </nav>
+    <br />
+    <hr />
+    <!-- Formularios -->
+    <form>
+      <fieldset>
+        <legend>Mi formulario de prueba</legend>
+        <label>Nombre: <input type="text" required /></label><br />
+        <label
+          >Apellido:
+          <input type="text" placeholder="Ingrese su apellido" /></label
+        ><br />
+        <label for="email">Correo: </label>
+        <input type="email" id="email" /><br />
+        <label>Contraseña: <input type="password" /></label><br />
+        <label> ¿Casado? </label>
+        <label>Si<input type="radio" name="casado" value="Si" /></label>
+        <label>No<input type="radio" name="casado" value="No" /></label><br />
+        <label>¿Qué postre le gustaría?</label>
+        <label>Helado<input type="checkbox" value="helado" /></label>
+        <label>Salpicón<input type="checkbox" value="salpicon" /></label>
+        <label>Torta<input type="checkbox" value="torta" /></label><br />
+        <label
+          >Seleccione su color favorito<input
+            type="color"
+            name=""
+            id="" /></label
+        ><br />
+        <label>Date<input type="date" name="" id="" /></label><br />
+        <label>Seleccione un archivo<input type="file" name="" id="" /></label
+        ><br />
+        <label for="mensaje">Dejenos su mensaje</label>
+        <textarea
+          name=""
+          id="mensaje"
+          cols="30"
+          rows="10"
+          placeholder="Se permite hasta 100 caracteres"
+        ></textarea
+        ><br />
+        <label for="pais">Seleccione su pais de origen</label>
+        <select name="pais" id="pais">
+          <option value="co">Colombia</option>
+          <option value="ve">Venezuela</option>
+          <option value="en">EEUU</option>
+        </select>
+        <!-- <input type="submit" /> -->
+        <div>
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpiar</button>
+        </div>
+      </fieldset>
+    </form>
+    <br />
+    <hr />
     <!-- Frames -->
     <iframe
       width="560"
