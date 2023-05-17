@@ -74,6 +74,39 @@ resultado = numero1 - numero2;
 resultado = numero1 * numero2;
 resultado = numero1 / numero2;
 resultado = numero1 % numero2;
+
+// Incremento y decremento
+resultado = ++numero1;
+resultado = --numero1;
+//console.log('resultado:', resultado);
+
+// Comparación
+resultado = 10 < 10;
+resultado = 10 <= 10;
+resultado = 10 > 9;
+resultado = 10 >= 10;
+resultado = 10 == 10;
+resultado = 10 == '10';
+resultado = 10 != '10';
+resultado = 10 !== '10';
+resultado = 10 === '10';
+resultado = 'hola' === 'ola';
+resultado = 'hola' < 'ola';
+resultado = 'hola' < 'bola';
+//console.log('resultado:', resultado);
+
+// Reversar
+resultado = 10 === 10;
+//console.log('resultado:', !resultado);
+
+// Lógicos
+resultado = 10 === 10 && 5 === 50;
+resultado = 10 === 10 || 5 === 50;
+resultado = !(10 === 10);
+//console.log('resultado:', resultado);
+
+// Operador ternario
+resultado = 10 === 100 ? 'si, es verdadero' : 'no, es falso';
 //console.log('resultado:', resultado);
 
 /* Funciones */
@@ -87,8 +120,18 @@ const retornoDeLaFuncion = sumar(numero1, numero2);
 
 /* Interacción */
 //console.log('Imprimir en consola');
-const entrada = prompt('Escribe un número:');
-console.log('entrada:', entrada);
-alert('Ingresaste el número: ' + entrada);
-const confirmado = confirm('Selecciona OK para confirmar');
-console.log(confirmado);
+//const entrada = prompt('Escribe un número:');
+//console.log('entrada:', entrada);
+//alert('Ingresaste el número: ' + entrada);
+//const confirmado = confirm('Selecciona OK para confirmar');
+//console.log(confirmado);
+
+// Función interactiva
+function suma() {
+  const num1 = parseInt(prompt('Ingrese el primer número: '));
+  const num2 = parseInt(prompt('Ingrese el segundo número: '));
+  //alert(num1 + ' + ' + num2 + ' = ' + (num1 + num2));
+  alert(`El resultado de ${num1} más ${num2} es ${num1 + num2}`);
+}
+
+//suma();
