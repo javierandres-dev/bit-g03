@@ -135,3 +135,152 @@ function suma() {
 }
 
 //suma();
+
+// Función declarada
+function mostrartexto(texto) {
+  console.log(texto);
+}
+
+//mostrartexto('este es el texto');
+//console.log(mostrartexto('este es el texto'));
+
+// Función expresada
+const mostrarNumero = (numero) => {
+  console.log(numero);
+};
+
+//mostrarNumero(10);
+//console.log(mostrarNumero(10));
+
+const retornaVerdadero = () => true;
+
+//console.log(retornaVerdadero());
+
+/* Hoisting vs Scope */
+function probandoAmbito() {
+  var texto;
+  //console.log(texto);
+  texto = 'soy texto';
+  //console.log(texto);
+}
+
+//probandoAmbito();
+//console.log(texto);
+
+const probandoAmbitoExp = () => {
+  var texto;
+  //console.log(texto);
+  texto = 'soy texto';
+  //console.log(texto);
+};
+
+//probandoAmbitoExp();
+//console.log(texto);
+
+/* Control de flujo */
+// Condicionales - if, if... else, if...else if...else, op ternario, switch
+function esMayorDeEdad(edad) {
+  if (edad >= 18) {
+    console.log('es mayor de edad');
+  } else {
+    console.log('no es mayor de edad');
+  }
+}
+
+//esMayorDeEdad(8);
+//esMayorDeEdad(18);
+
+function esPositivoOnegativo(numero) {
+  if (numero > 0) {
+    console.log('el número es positivo');
+  } else if (numero < 0) {
+    console.log('el número es negativo');
+  } else {
+    console.log('el número es cero');
+  }
+}
+//esPositivoOnegativo(1);
+//esPositivoOnegativo(-1);
+//esPositivoOnegativo(0);
+
+function esPepita(nombre) {
+  const respuesta = nombre === 'pepita' ? 'Si, es pepita' : 'No, no es';
+  console.log(respuesta);
+}
+
+//esPepita('pepita');
+//esPepita('pepito');
+
+const esPepito = (nombre) =>
+  nombre === 'pepito' ? 'Si, es pepito' : 'No, no es';
+
+//console.log(esPepito('pepito'));
+//console.log(esPepito('pepita'));
+
+function nivelAcceso(perfil) {
+  switch (perfil) {
+    case 'administrador':
+      console.log('redirigir a panel administrativo...');
+      break;
+    case 'vendedor':
+      console.log('redirigir a panel de ventas...');
+      break;
+    case 'cliente':
+      console.log('redirigir a tienda virtual...');
+      break;
+    default:
+      console.log('redirigir a formulario de registro...');
+      break;
+  }
+}
+
+//nivelAcceso('x');
+//nivelAcceso('cliente');
+//nivelAcceso('vendedor');
+//nivelAcceso('administrador');
+
+// Ciclos - do..while, while, for
+function deseaSalir() {
+  let respuesta;
+  do {
+    respuesta = !confirm('¿Desea salir?');
+  } while (respuesta);
+  console.log('Se salió');
+}
+
+//deseaSalir();
+
+function deseaEntrar() {
+  let contador = 0;
+  let respuesta = confirm('¿Desea entrar?');
+
+  while (respuesta === true && contador < 1) {
+    console.log('Entró!');
+    contador++;
+  }
+  console.log('Fuera.');
+}
+
+//deseaEntrar();
+
+function mostrarHastaN() {
+  const n = prompt('ingrese un número: ');
+  let numero = 1;
+  let mostrar = '';
+  while (numero <= n) {
+    mostrar += numero + '\n';
+    numero++;
+  }
+  alert(mostrar);
+  console.log(mostrar);
+}
+//mostrarHastaN();
+
+function mostrarHastaM(m) {
+  for (let numero = 1; numero <= m; numero++) {
+    console.log('código a ejecutar');
+  }
+}
+
+//mostrarHastaM(5);
+//mostrarHastaM(5000);
