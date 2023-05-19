@@ -12,6 +12,8 @@ Fecha de finalización: 2023/06/02
 ---
 ### Código de muestra
 - :open_file_folder: html
+- :open_file_folder: css
+- :open_file_folder: javascript
 ---
 ### [Guías](./guias/index.md)
 ### [Página del curso](https://javierandres-dev.github.io/bit-course-frontend_02/)
