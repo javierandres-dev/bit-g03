@@ -3,11 +3,13 @@
 ### Objetivos de aprendizaje
 - JavaScript
 #### Términos y conceptos
-- Estructuras de datos
+* Estructuras de datos
+  - Arreglos
+  - Objetos
 - Operador instanceof
-- Operador Rest
+- Rest Argumentos
 - Operador Spread
-- HTML, CSS, JavaScript juntos
+- HTML, CSS, JavaScript
 - API
 - Web APIs
 - Eventos
