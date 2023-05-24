@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      figure {
+        width: 240px;
+        margin: auto;
+      }
+      img {
+        width: 100%;
+        border-radius: 20px;
+      }
+      button {
+        display: block;
+        margin: 20px auto;
+        padding: 10px 40px;
+        border-radius: 20px;
+      }
+    </style>
+    <title>API Externa</title>
+  </head>
+  <body>
+    <h1>API Externa</h1>
+    <figure></figure>
+    <button>Obtener pato</button>
+    <script>
+      'use strict';
+      const $figure = document.querySelector('figure');
+      const $btn = document.querySelector('button');
+
+      const obtenerPato = async () => {
+        try {
+          const respuesta = await fetch('https://random-d.uk/api/v2/random');
+          // console.log('respuesta:', respuesta);
+          const objeto = await respuesta.json();
+          // console.log('objeto:', objeto);
+          $figure.innerHTML = `<img src="${objeto.url}" alt="${objeto.message}" />`;
+        } catch (error) {
+          console.log('error:', error);
+        }
+      };
+
+      $btn.addEventListener('click', obtenerPato);
+    </script>
+  </body>
+</html>

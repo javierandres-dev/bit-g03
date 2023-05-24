@@ -407,3 +407,72 @@ const objC = { objA, objB };
 //console.log(objC);
 const objD = { ...objA, ...objB };
 //console.log(objD);
+
+/* Sincrónico */
+function sincronico() {
+  console.log(1);
+  console.log(2);
+  console.log(3);
+}
+// sincronico();
+
+/* Asíncrono */
+function asincrono() {
+  console.log('uno');
+  setTimeout(() => {
+    console.log('tres');
+  }, 4000);
+  console.log('dos');
+}
+// asincrono();
+
+/* Promesas */
+function miPromesa() {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve({
+        mensaje: 'Si cumplió, todo fue bien',
+      });
+      /* reject({
+        mensaje: 'No cumplió, algo salió mal',
+      }); */
+    }, 4000);
+  });
+}
+/*
+const respuesta = miPromesa();
+console.log(respuesta);
+respuesta
+  .then((payload) => {
+    console.log('camino feliz', payload);
+  })
+  .catch((error) => {
+    console.log('camino triste', error);
+  });
+*/
+async function usandoPromesa() {
+  try {
+    const respuesta = await miPromesa();
+    console.log(respuesta);
+  } catch (error) {
+    console.log(error);
+  } finally {
+    console.log('siempre aquí');
+  }
+}
+//usandoPromesa();
+
+/* JSON */
+const objetoJavascript = {
+  nombre: 'pepita',
+  apellido: 'pérez',
+};
+//console.log(objetoJavascript);
+//console.log(objetoJavascript.nombre);
+//console.log(typeof objetoJavascript);
+// Serializar
+const objetoJson = JSON.stringify(objetoJavascript);
+//console.log(objetoJson);
+//console.log(objetoJson.nombre);
+//console.log(typeof objetoJson);
+// Deserealizar
