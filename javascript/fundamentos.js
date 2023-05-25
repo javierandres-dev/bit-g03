@@ -239,6 +239,12 @@ function nivelAcceso(perfil) {
 //nivelAcceso('vendedor');
 //nivelAcceso('administrador');
 
+/* Verdaderos y Falsos implicitos */
+if (true && 'algo' && -1 && {} && []) {
+  //  console.log('es verdadero');
+}
+// false, '', -0, 0, null, undefined
+
 // Ciclos - do..while, while, for
 function deseaSalir() {
   let respuesta;
@@ -476,3 +482,35 @@ const objetoJson = JSON.stringify(objetoJavascript);
 //console.log(objetoJson.nombre);
 //console.log(typeof objetoJson);
 // Deserealizar
+
+/* Web storage API */
+function guardarEnLocal(datos) {
+  // Serializar JSON
+  const string = JSON.stringify(datos);
+  localStorage.setItem('credenciales', string);
+}
+/* guardarEnLocal({
+  usuario: 'pepita',
+  contraseña: 1234,
+}); */
+
+function obtenerDeLocal(clave) {
+  let valor = localStorage.getItem(clave);
+  console.log(valor);
+  console.log(typeof valor);
+  // Deserealizar JSON
+  valor = JSON.parse(valor);
+  alert(`Hola, ${valor.usuario}`);
+}
+//obtenerDeLocal('credenciales');
+
+/* Objetos de JavaScript
+  Métodos
+  Propiedades
+*/
+const stringObj = new String('hola');
+//console.log(stringObj);
+//console.log(typeof stringObj);
+const numberObj = new Number(10);
+//console.log(numberObj);
+//console.log(typeof numberObj);
