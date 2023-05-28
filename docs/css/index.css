@@ -1,9 +1,22 @@
 body {
   background-color: lightgray;
 }
+a {
+  color: blue;
+}
+a:hover {
+  color: darkgreen;
+}
 .activo {
   color: green;
 }
 .inactivo {
   color: grey;
+}
+.falta-repo {
+  color: orangered;
+}
+.error {
+  color: red;
+  text-decoration: underline;
 }
