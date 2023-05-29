@@ -14,6 +14,7 @@ Fecha de finalización: 2023/06/02
 - :open_file_folder: html
 - :open_file_folder: css
 - :open_file_folder: javascript
+- :open_file_folder: react
 ---
 ### [Guías](./guias/index.md)
 ### [Página del curso](https://javierandres-dev.github.io/bit-course-frontend_02/)
