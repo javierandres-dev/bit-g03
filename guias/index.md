@@ -9,3 +9,7 @@
 - [Sesión 7](./sesion07.md)
 - [Sesión 8](./sesion08.md)
 - [Sesión 9](./sesion09.md)
+- [Sesión 10](./sesion10.md)
+- [Sesión 11](./sesion11.md)
+- [Sesión 12](./sesion12.md)
+- [Sesión 13](./sesion13.md)

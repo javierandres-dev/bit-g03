@@ -3,12 +3,14 @@
 ### Objetivos de aprendizaje
 - JavaScript
 #### Términos y conceptos
-- APIs de terceros
-- Asincronía
-- Promesas
-- JSON
+- Eventos
+- Formularios
+- Manejo de errores
+- Notificaciones
+- noscript
+- Truthy
+- Falsy
 #### Recursos
-- [Third-party APIs](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Third_party_APIs)
-- [Asynchronous](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Asynchronous/Introducing)
-- [Promise](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
-- [JSON](https://www.json.org/)
+- [Events](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events)
+- [Truthy](https://developer.mozilla.org/en-US/docs/Glossary/Truthy)
+- [Falsy](https://developer.mozilla.org/en-US/docs/Glossary/Falsy)
