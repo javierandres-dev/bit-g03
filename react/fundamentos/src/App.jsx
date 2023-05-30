@@ -9,12 +9,36 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 //import { PropsChildren } from './components/PropsChildren';
 //import { Estilos } from './components/Estilos';
 //import { EstilosModulares } from './components/EstilosModulares';
-import { EstilosBootstrap } from './components/EstilosBootstrap';
+//import { EstilosBootstrap } from './components/EstilosBootstrap';
+//import { Estado } from './components/Estado';
+//import { CicloDeVida } from './components/CicloDeVida';
+//import { Contexto } from './components/Contexto';
+//import { Referencia } from './components/Referencia';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import { Inicio } from './Pages/Inicio';
+import { Contacto } from './Pages/Contacto';
 
 export function App() {
-  return <EstilosBootstrap />;
+  return (
+    <BrowserRouter>
+      <nav>
+        <Link to='/'>Inicio</Link>
+        <br />
+        <Link to='/contacto'>Contacto</Link>
+      </nav>
+      <Routes>
+        <Route path='/' element={<Inicio />} />
+        <Route path='/contacto' element={<Contacto />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 /*
+<Referencia />
+<Contexto />
+<CicloDeVida />
+<Estado />
+<EstilosBootstrap />
 <EstilosModulares />
 <Estilos />
 <PropsChildren>
