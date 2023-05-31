@@ -1,11 +1,14 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export const PaginaRegistro = () => {
+export const PaginaRegistro = ({ setLogueado }) => {
   const [nuevoUsuario, setNuevoUsuario] = useState({
     nombre: null,
     correo: null,
     contrasena: null,
   });
+
+  const navigate = useNavigate();
 
   const manejarEntrada = (evento) => {
     setNuevoUsuario({
@@ -29,11 +32,13 @@ export const PaginaRegistro = () => {
       'token',
       JSON.stringify({ name: nuevoUsuario.nombre })
     );
+    setLogueado(true);
+    navigate('/privado');
   };
 
   return (
     <div>
-      <form className='registro' onSubmit={manejarEnvio}>
+      <form className='formulario' onSubmit={manejarEnvio}>
         <input
           type='text'
           placeholder='Nombre'

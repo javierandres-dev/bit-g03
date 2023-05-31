@@ -1,3 +1,8 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 html {
   font-size: 62.5%; /* 10px */
 }
@@ -6,13 +11,39 @@ body {
 }
 .navegacion {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  justify-content: space-between;
 }
-
-.registro {
+.navegacion nav {
+  display: flex;
+  gap: 20px;
+}
+.formulario {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+.titulo {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  margin: 40px 0;
+}
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  max-width: 960px;
+  margin: auto;
+}
+.tarjeta {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.tarjeta button {
+  margin: 20px 0;
+  padding: 10px 30px;
+  font-size: 20px;
 }
