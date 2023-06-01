@@ -47,3 +47,30 @@ body {
   padding: 10px 30px;
   font-size: 20px;
 }
+.carrito {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.contenedor-pagar {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.detalles-pagar {
+  background-color: white;
+  border: 1px solid black;
+  padding: 20px 40px;
+  width: 640px;
+}
+.detalles-pagar button {
+  margin: 20px;
+}

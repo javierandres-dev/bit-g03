@@ -1,8 +1,4 @@
-export const Tarjeta = ({ articulo, cart, setCart }) => {
-  const agregarAlCarrito = (item) => {
-    setCart([...cart, item]);
-  };
-
+export const Tarjeta = ({ articulo, agregarAlCarrito }) => {
   return (
     <div className='tarjeta'>
       <figure>
