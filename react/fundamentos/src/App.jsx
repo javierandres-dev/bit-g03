@@ -17,6 +17,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import { Inicio } from './Pages/Inicio';
 import { Contacto } from './Pages/Contacto';
+import { ApiExterna } from './components/ApiExterna';
 
 export function App() {
   return (
@@ -30,6 +31,8 @@ export function App() {
         <Route path='/' element={<Inicio />} />
         <Route path='/contacto' element={<Contacto />} />
       </Routes>
+      <hr />
+      <ApiExterna />
     </BrowserRouter>
   );
 }
